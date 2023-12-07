@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Basic Calculator</title>
+<style type="text/css">
+
+.Back {
+	background-color: #F9F9F9;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.btn {
+	font-size: 24px;
+}
+.res {
+	background-color: #FFFFAC;
+	font-family: "MS Serif", "New York", serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+.ctr {
+	text-align: center;
+}
+.heading {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+}
+</style>
+</head>
+
+<body>
+<div align="center">
+  <p class="heading">BASIC CALCULATOR</p>
+  <table width="649" height="299" border="1" class="Back">
+    <tr>
+      <td width="233" height="58"><div align="center">Enter Numerical Value (X)</div></td>
+      <td colspan="5"><label for="X"></label>
+        <div align="center">
+          <input name="X" type="text" class="ctr" id="X" />
+      </div></td>
+    </tr>
+    <tr>
+      <td height="58"><div align="center">Enter Numerical Value (Y)</div></td>
+      <td colspan="5"><label for="Y"></label>
+        <div align="center">
+          <input name="Y" type="text" class="ctr" id="Y" />
+      </div></td>
+    </tr>
+    <tr>
+      <td height="50"><div align="center">X ? Y</div></td>
+      <td width="90"><div align="center">
+        <span class="btn">
+        <button type="button" class="btn" title="+" onclick="f1()">+</button>
+      </span></div></td>
+      <td width="90"><div align="center">
+        <span class="btn">
+        <button type="button" class="btn" title="minus" onclick="f2()">-</button>
+      </span></div></td>
+      <td width="90"><div align="center">
+        <span class="btn">
+        <button type="button" class="btn" title="multiply" onclick="f3()">x</button>
+      </span></div></td>
+      <td width="90"><div align="center">
+        <span class="btn">
+        <button type="button" class="btn" title="divide" onclick="f4()">/</button>
+      </span></div></td>
+
+    </tr>
+    <tr>
+      <td height="31"><div align="center">Result
+      </div></td>
+      <td colspan="5"><label for="result"></label>
+        <div align="center">
+<textarea cols="50" rows="2" class="res" id="result"> </textarea>
+      </div></td>
+    </tr>
+  </table>
+</div>
+<script src="method.js"></script>
+
+<br /> <br /> <br /> 
+<br />
+<footer>
+  <p align="center" class="ctr">Web Development INTERN @ Info aidTech. </p>
+  <p align="center" class="ctr">Sumaira Saeed Awan<br>
+    <a href="mailto:sumairaawan98@gmail.com">sumairaawan98@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
